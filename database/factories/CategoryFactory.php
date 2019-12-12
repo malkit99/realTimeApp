@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\ModelReply;
+use App\Model\Category;
 use Faker\Generator as Faker;
 
-$factory->define(ModelReply::class, function (Faker $faker) {
+$factory->define(Category::class, function (Faker $faker) {
     return [
         //
     ];

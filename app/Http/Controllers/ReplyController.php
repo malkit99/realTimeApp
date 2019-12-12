@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\ModelLike;
+use App\Model\Reply;
 use Illuminate\Http\Request;
 
-class ModelLikeController extends Controller
+class ReplyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ModelLikeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ModelLike  $modelLike
+     * @param  \App\Model\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function show(ModelLike $modelLike)
+    public function show(Reply $reply)
     {
         //
     }
@@ -52,10 +52,10 @@ class ModelLikeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ModelLike  $modelLike
+     * @param  \App\Model\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function edit(ModelLike $modelLike)
+    public function edit(Reply $reply)
     {
         //
     }
@@ -64,10 +64,10 @@ class ModelLikeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ModelLike  $modelLike
+     * @param  \App\Model\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModelLike $modelLike)
+    public function update(Request $request, Reply $reply)
     {
         //
     }
@@ -75,10 +75,10 @@ class ModelLikeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ModelLike  $modelLike
+     * @param  \App\Model\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ModelLike $modelLike)
+    public function destroy(Reply $reply)
     {
         //
     }

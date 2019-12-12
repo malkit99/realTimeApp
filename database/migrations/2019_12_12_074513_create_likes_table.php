@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModelRepliesTable extends Migration
+class CreateLikesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,8 @@ class CreateModelRepliesTable extends Migration
      */
     public function up()
     {
-        Schema::create('model_replies', function (Blueprint $table) {
+        Schema::create('likes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('body');
-
-            $table->bigInteger('question_id')->unsigned();
-            $table->bigInteger('user_id');
-            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ class CreateModelRepliesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('model_replies');
+        Schema::dropIfExists('likes');
     }
 }

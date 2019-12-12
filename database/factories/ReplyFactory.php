@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\ModelLike;
+use App\Model\Reply;
 use Faker\Generator as Faker;
 
-$factory->define(ModelLike::class, function (Faker $faker) {
+$factory->define(Reply::class, function (Faker $faker) {
     return [
         //
     ];

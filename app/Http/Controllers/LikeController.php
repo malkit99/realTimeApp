@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\ModelQuestion;
+use App\Model\Like;
 use Illuminate\Http\Request;
 
-class ModelQuestionController extends Controller
+class LikeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ModelQuestionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ModelQuestion  $modelQuestion
+     * @param  \App\Model\Like  $like
      * @return \Illuminate\Http\Response
      */
-    public function show(ModelQuestion $modelQuestion)
+    public function show(Like $like)
     {
         //
     }
@@ -52,10 +52,10 @@ class ModelQuestionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ModelQuestion  $modelQuestion
+     * @param  \App\Model\Like  $like
      * @return \Illuminate\Http\Response
      */
-    public function edit(ModelQuestion $modelQuestion)
+    public function edit(Like $like)
     {
         //
     }
@@ -64,10 +64,10 @@ class ModelQuestionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ModelQuestion  $modelQuestion
+     * @param  \App\Model\Like  $like
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ModelQuestion $modelQuestion)
+    public function update(Request $request, Like $like)
     {
         //
     }
@@ -75,10 +75,10 @@ class ModelQuestionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ModelQuestion  $modelQuestion
+     * @param  \App\Model\Like  $like
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ModelQuestion $modelQuestion)
+    public function destroy(Like $like)
     {
         //
     }
