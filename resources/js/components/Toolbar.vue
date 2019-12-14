@@ -5,12 +5,14 @@
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items>
+      <div class="hidden-sm-and-down">
+
         <v-btn text>Fourm</v-btn>
         <v-btn text>Ask Question</v-btn>
         <v-btn text>Category</v-btn>
-        <v-btn text>Login</v-btn>
-      </v-toolbar-items>
+
+        <router-link to="/login"><v-btn text>Login</v-btn></router-link>
+      </div>
     </v-toolbar>
 </div>
 </template>
