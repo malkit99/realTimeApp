@@ -9,6 +9,19 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CategoryController extends Controller
 {
+
+
+       /**
+     * Create a new AuthController instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('Jwt', ['except' => ['index','show']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
