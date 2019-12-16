@@ -12,6 +12,7 @@ class User {
         const username = res.data.user
         if(Token.isvalid(access_token)){
             AppStorage.store(username,access_token)
+            window.location = '/fourm'
         }
     }
 
@@ -26,10 +27,12 @@ class User {
 
     logedIn(){
         return this.hasToken()
+
     }
 
     logout(){
         AppStorage.clear()
+        window.location = '/fourm'
     }
 
     name(){

@@ -46,12 +46,13 @@
                     required
                   />
                 <v-card-actions>
-                <v-spacer />
-                <v-btn
-                color="primary"
-                type="submit"
-                >Login</v-btn>
-              </v-card-actions>
+                    <v-btn color="success" type="submit">Login</v-btn>
+                      <v-spacer />
+                    <router-link to="/signup">
+                        <v-btn color="primary">SignUp</v-btn>
+                    </router-link>
+
+                </v-card-actions>
 
                 </v-form>
               </v-card-text>
@@ -81,9 +82,16 @@ export default {
 
         }
     },
+
+    created(){
+        if(User.logedIn()){
+            this.$router.push({name:"fourm"})
+        }
+    },
     methods:{
         login(){
             User.login(this.form)
+
         }
     }
 
