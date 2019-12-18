@@ -23,9 +23,6 @@
                 flat
               >
                 <v-toolbar-title>Login To Macroword Fourm</v-toolbar-title>
-                <v-spacer />
-
-
               </v-toolbar>
               <v-card-text>
                 <v-form @submit.prevent="login">

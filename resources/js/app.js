@@ -8,9 +8,12 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import Vue from 'vue'
-import Vuetify from 'vuetify'
 
-Vue.use(Vuetify)
+// import Vuetify from 'vuetify'
+// Vue.use(Vuetify)
+import vuetify from './vuetify';
+
+
 import User from './Helpers/User'
 window.User = User
 
@@ -36,8 +39,16 @@ Vue.component('AppHome', require('./components/AppHome.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import router from './router/router.js';
+
+
+import VueSimplemde from 'vue-simplemde'
+Vue.component('vue-simplemde', VueSimplemde)
+
+import md from 'marked'
+window.md = md
+
 const app = new Vue({
     el: '#app',
     router,
-    vuetify: new Vuetify(),
+    vuetify,
 });
