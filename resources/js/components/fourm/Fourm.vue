@@ -1,17 +1,18 @@
 <template>
     <div class="fourm">
     <v-container fluid >
-        <v-row no-gutters>
+        <v-row>
                 <v-col cols="12" md="8">
                     <question
                     v-for="question in questions"
                     :key="question.path"
                     :question = question
-                    ></question>
+                    >
+                    </question>
                 </v-col>
                 <v-col cols="6" md="4">
 
-                            sidebar
+                    <app-sidebar></app-sidebar>
 
                 </v-col>
         </v-row>
@@ -21,10 +22,12 @@
 
 <script>
 import Question from './Question'
+import AppSidebar from './AppSidebar'
 export default {
     name:"fourm",
     components:{
-        Question
+        Question,
+        AppSidebar
     },
 
     data: function(){

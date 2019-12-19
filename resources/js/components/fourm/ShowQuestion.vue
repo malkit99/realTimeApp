@@ -1,14 +1,13 @@
 <template>
     <div class="show-question">
-        <v-container>
-            <v-row >
-                <v-col cols="12">
-                    <v-card class="pa-2" outlined tile>
+
+
+                    <v-card class="pa-2 mt-2" outlined tile >
                         <v-card-title>
                             {{data.title}}
 
                               <v-spacer></v-spacer>
-                            <v-btn depressed color="success"> 6 Replies</v-btn>
+                            <v-btn depressed color="success">{{data.reply_count}} Replies</v-btn>
                         </v-card-title>
 
                         <v-card-subtitle>
@@ -24,20 +23,15 @@
                         <v-card-actions v-if="own">
                             <v-btn icon >
                                 <v-icon color="pink" @click="edit">edit</v-icon>
-
                             </v-btn>
 
                               <v-btn icon >
-
                                 <v-icon color="pink" @click="destory">delete</v-icon>
                             </v-btn>
                         </v-card-actions>
-
-
                     </v-card>
-                </v-col>
-            </v-row>
-        </v-container>
+
+
 
     </div>
 </template>

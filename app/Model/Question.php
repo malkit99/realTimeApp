@@ -9,6 +9,7 @@ class Question extends Model
 {
     protected $fillable = ['title','slug','body','category_id','user_id'];
 
+    protected $with = ['replies'];
     // protected $guarded =[];
 
 

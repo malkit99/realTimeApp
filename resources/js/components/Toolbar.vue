@@ -28,7 +28,7 @@ export default {
             items: [
                 {title:"Fourm" , to:'/fourm', show:true},
                 {title:"Ask Question" , to:'/ask', show:User.logedIn()},
-                {title:"Category" , to:'/category', show:User.logedIn()},
+                {title:"Category" , to:'/category', show:User.admin()},
                  {title:"Login" , to:'/login', show: !User.logedIn()},
                 {title:"Logout" , to:'/logout', show:User.logedIn()},
             ]

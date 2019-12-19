@@ -8,11 +8,13 @@ import Signup from '../components/login/Signup'
 import Fourm from '../components/fourm/Fourm'
 import Create from '../components/fourm/Create'
 import Read from '../components/fourm/Read'
+import CreateCategory from '../components/category/CreateCategory'
 const routes = [
     { path: '/login', component: Login },
     { path: '/logout', component: Logout },
     { path: '/signup', component: Signup },
     { path: '/fourm', component: Fourm , name:'fourm'},
+    { path: '/category', component: CreateCategory , name:'category'},
     { path: '/ask', component: Create},
     { path: '/question/:slug', component: Read , name:'read'},
 
