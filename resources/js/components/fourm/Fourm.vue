@@ -9,6 +9,8 @@
                     :question = question
                     >
                     </question>
+
+
                 </v-col>
                 <v-col cols="6" md="4">
 
@@ -23,11 +25,13 @@
 <script>
 import Question from './Question'
 import AppSidebar from './AppSidebar'
+
 export default {
     name:"fourm",
     components:{
         Question,
-        AppSidebar
+        AppSidebar,
+
     },
 
     data: function(){
