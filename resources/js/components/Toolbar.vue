@@ -4,7 +4,7 @@
       <v-toolbar-title>Macroword</v-toolbar-title>
 
       <v-spacer></v-spacer>
-
+        <new-notification v-if="logedIn"></new-notification>
       <div class="hidden-sm-and-down">
         <router-link
         v-for="item in items"
@@ -20,11 +20,16 @@
 </template>
 
 <script>
+
+import NewNotification from '../components/NewNotification'
 export default {
     name:"Toolbar",
-
+        components:{
+                NewNotification
+        },
     data: function (){
         return{
+            logedIn: User.logedIn(),
             items: [
                 {title:"Fourm" , to:'/fourm', show:true},
                 {title:"Ask Question" , to:'/ask', show:User.logedIn()},

@@ -2,7 +2,6 @@
     <div class="AppHome">
         <toolbar></toolbar>
         <router-view></router-view>
-
     </div>
 </template>
 
